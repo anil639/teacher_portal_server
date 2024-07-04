@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 
 const port = process.env.PORT || 8000;
 const authRoutes = require("./routes/auth");
+const studentRoutes = require("./routes/students");
 const app = express();
 
 app.use(express.json());
@@ -19,6 +20,7 @@ mongoose
 
 //Routes
 app.use("/api", authRoutes);
+app.use("/api/students", studentRoutes);
 
 app.listen(port, () => {
   console.log(`DB connection established on ${port}`);
