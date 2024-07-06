@@ -1,4 +1,4 @@
-# Teacher Portal Client
+# Teacher Portal Server
 
 - Clone this repository from https://github.com/anil639/teacher_portal_server.git
 - Change Directory
